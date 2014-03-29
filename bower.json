@@ -1,0 +1,27 @@
+{
+  "name": "bolt_basetheme",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bolt/bolt",
+  "authors": [
+    "Dino DiGiulio <deansterling@mac.com>"
+  ],
+  "description": "A bolt theme with foundation / compass and other resources",
+  "keywords": [
+    "bolt"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bower-compass-core": "~0.0.1",
+    "foundation": "zurb/bower-foundation#~5.2.1",
+    "fancybox": "~2.1.5",
+    "CaliforniaJobCase": "git://github.com/DeanoDee/CaliforniaJobCase.git"
+  }
+}

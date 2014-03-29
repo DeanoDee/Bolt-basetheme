@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ htmllang() }}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{ htmllang() }}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{ htmllang() }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ htmllang() }}"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {# make sure we always display a proper title: The record's title if there is one, appended with the
+       sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
+    <title>
+      {% if record.title is defined %}{{ record.title|striptags }} | {% endif %}
+      {{ app.config.get('general/sitename') }}
+      {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif %}
+    </title>
+    <link href="{{ paths.theme }}css/app.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
+</head>

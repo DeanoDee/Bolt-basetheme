@@ -1,0 +1,8 @@
+.sass-cache/**
+bower_components/**
+node_modules/**
+css/*.css
+css/renders/*.css
+css/scss/*settings.scss
+js/*.js
+images/**
